@@ -10,18 +10,29 @@
 # YOU DO the rest:
 
 
-"Hello World".include?("Hello")
+p "Hello World".include?("Hello")
+
+# Returns a boolean value; will be true if original string contains the value in parentheses
+# and will be false if it does not
+
+p "Hello World".end_with?("Hello")
+
+#Returns a boolean value; will be true if the last word of the original string matches the value
+#after the .end_with? method and will be false if the last word of the original string does not matches
+#the value of the string after the .end_with? method
 
 
-"Hello World".end_with?("Hello")
+p "Hello World".end_with?("rld")
+  # I saw that this came out true so I ran it again after adding "wo" to the "rld" string after
+  # the method. It also returned true. From this, I have inferred that as long as the string after
+  #the method contains characters from the last value in the original string in the correct order,
+  # it will return true.
 
 
-"Hello World".end_with?("rld")
+p 12.even?
 
+#This method is asking whether the integer before it is an even number. It returns a boolean.
 
-12.even?
+p 18.next
 
-
-18.next
-
-
+#This method returns the integer next in counting order after the integer it is acting on. 
